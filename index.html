@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Platillos y Postres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .menu-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .menu-title {
+            text-align: center;
+            font-size: 2em;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .menu-details {
+            flex: 1;
+        }
+
+        .menu-name {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333333;
+        }
+
+        .menu-price {
+            font-size: 1.2em;
+            color: #555555;
+            margin: 5px 0;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .menu-item img {
+                margin: 0 0 10px 0; /* Margen para centrar en móvil */
+                width: 250px;
+                height: 250px;
+            }
+
+            .menu-name {
+                font-size: 1.2em;
+            }
+
+            .menu-price {
+                font-size: 1em;
+            }
+
+            .menu-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Platillos -->
+    <div class="menu-container">
+        <h1 class="menu-title">Carta de Platillos</h1>
+
+        <!-- 12 platillos -->
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13.png" alt="Platillo 1">
+            <div class="menu-details">
+                <h2 class="menu-name">Lentejas a caballo</h2>
+                <p class="menu-price">$150.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pant.png" alt="Platillo 2">
+            <div class="menu-details">
+                <h2 class="menu-name">Pasta con Chichiri</h2>
+                <p class="menu-price">$200.00</p>
+            </div>
+        </div>
+        <!-- Agregar más platillos hasta completar 12 -->
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13 095416.png" alt="Platillo 3">
+            <div class="menu-details">
+                <h2 class="menu-name">Riñones al vino blanco</h2>
+                <p class="menu-price">$180.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-.png" alt="Platillo 4">
+            <div class="menu-details">
+                <h2 class="menu-name">Calamares a la scarpetta</h2>
+                <p class="menu-price">$210.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla -.png" alt="Platillo 5">
+            <div class="menu-details">
+                <h2 class="menu-name">Ranas a la provenzal</h2>
+                <p class="menu-price">$190.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13 095428.png" alt="Platillo 6">
+            <div class="menu-details">
+                <h2 class="menu-name">Rabas a la calabria</h2>
+                <p class="menu-price">$170.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-15.png" alt="Platillo 7">
+            <div class="menu-details">
+                <h2 class="menu-name">Merluza al ajillo</h2>
+                <p class="menu-price">$220.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captu5.png" alt="Platillo 8">
+            <div class="menu-details">
+                <h2 class="menu-name">Gambas al ajillo</h2>
+                <p class="menu-price">$160.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13 095440.png" alt="Platillo 9">
+            <div class="menu-details">
+                <h2 class="menu-name">Fusiles al Ferretto</h2>
+                <p class="menu-price">$240.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-111.png" alt="Platillo 10">
+            <div class="menu-details">
+                <h2 class="menu-name">Mondongo a la italiana</h2>
+                <p class="menu-price">$230.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 1.png" alt="Platillo 11">
+            <div class="menu-details">
+                <h2 class="menu-name">Fusiles con brócoli y garbanzo</h2>
+                <p class="menu-price">$250.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13 095456.png" alt="Platillo 12">
+            <div class="menu-details">
+                <h2 class="menu-name">Caracoles a la bordalesa</h2>
+                <p class="menu-price">$260.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Postres -->
+    <div class="menu-container">
+        <h1 class="menu-title">Postres</h1>
+
+        <!-- 4 postres -->
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-1.png" alt="Postre 1">
+            <div class="menu-details">
+                <h2 class="menu-name">Arroz con leche</h2>
+                <p class="menu-price">$80.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 20.png" alt="Postre 2">
+            <div class="menu-details">
+                <h2 class="menu-name">Quinotes caseros</h2>
+                <p class="menu-price">$90.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla .png" alt="Postre 3">
+            <div class="menu-details">
+                <h2 class="menu-name">Tiramisu</h2>
+                <p class="menu-price">$75.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/Captura de pantalla 2024-11-13png.png" alt="Postre 4">
+            <div class="menu-details">
+                <h2 class="menu-name">Helado</h2>
+                <p class="menu-price">$85.00</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
